@@ -6,7 +6,7 @@ export default class App extends Component {
 		super(props);
 
 		this.state = {
-			name: 'Deepak Kumar rahul sharma',
+			name: 'Deepak Kumar rahul sharma dshgj',
 			address: 'Phase 11'
 		}
 	}
