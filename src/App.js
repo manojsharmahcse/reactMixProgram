@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Details from './Details';
 
 export default class App extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			name: 'Deepak Kumar rahul sharma dshgj',
 			address: 'Phase 11'
@@ -17,12 +16,11 @@ export default class App extends Component {
 
 	render() {
 		const  { name, address } = this.state;
-
 		return(
-			<React.Fragment>
+			<Fragment>
 				<Details name={name} address={address} />
 				<button onClick={this.onClick.bind(this, 1, 2)}>Click</button>
-			</React.Fragment>
+			</Fragment>
 		)
 	}
 }
