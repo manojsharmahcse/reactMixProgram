@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Toggle from './Toggle';
+import Valuechange from './Valuechange';
 import Tabs from './Tabs';
 
 
@@ -18,12 +18,12 @@ ReactDOM.render(
 			<div>
 				<Link to='/'>Home</Link>&nbsp;
 				<Link to='/tabs'>Tab</Link>&nbsp;
-				<Link to='/toggle'>Toggle</Link>
+				<Link to='/Valuechange'>Valuechange</Link>
 			</div>
 
 			<Route exact component={App} path="/" />
 			<Route component={Tabs} path="/tabs" />
-			<Route component={Toggle} path="/Toggle" />
+			<Route component={Valuechange} path="/Valuechange" />
 
 		</div>
 	 </Router>, document.getElementById('root'));
